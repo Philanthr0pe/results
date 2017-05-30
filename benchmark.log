@@ -313,4 +313,46 @@ Result "measureBees":
 
 # Run progress: 42.86% complete, ETA 01:00:24
 # Fork: 1 of 1
+# Warmup Iteration   1: 1763.218 s/op
+Iteration   1: 1790.815 s/op
+
+
+Result "measureBees":
+  1790.815 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 2048, b = 256)
+
+# Run progress: 57.14% complete, ETA 01:18:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 3933.223 s/op
+Iteration   1: 3524.982 s/op
+
+
+Result "measureBees":
+  3524.982 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 2048, b = 512)
+
+# Run progress: 71.43% complete, ETA 01:31:32
+# Fork: 1 of 1
 # Warmup Iteration   1: 
