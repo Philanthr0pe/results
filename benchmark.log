@@ -1,0 +1,316 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building quant-hash 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) > test-compile @ quant-hash >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ quant-hash ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ quant-hash ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ quant-hash ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/quanthash/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ quant-hash ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) < test-compile @ quant-hash <<<
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) @ quant-hash ---
+[INFO] Attaching agents: []
+17:15:15.468 [main] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings - Included patterns for restart : []
+17:15:15.471 [main] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-starter/target/classes/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot/target/classes/, /spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/]
+17:15:15.472 [main] DEBUG org.springframework.boot.devtools.restart.ChangeableUrls - Matching URLs for reloading : [file:/root/quanthash/target/classes/]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.2.RELEASE)
+
+2017-05-30 17:15:15.915  INFO 19600 --- [  restartedMain] com.univer.quanthash.Application         : Starting Application with PID 19600 (/root/quanthash/target/classes started by root in /root/quanthash)
+2017-05-30 17:15:15.915  INFO 19600 --- [  restartedMain] com.univer.quanthash.Application         : No active profile set, falling back to default profiles: default
+2017-05-30 17:15:15.969  INFO 19600 --- [  restartedMain] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5a8b157e: startup date [Tue May 30 17:15:15 MSK 2017]; root of context hierarchy
+2017-05-30 17:15:17.380  INFO 19600 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-30 17:15:17.400  INFO 19600 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-30 17:15:17.551  INFO 19600 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-30 17:15:17.552  INFO 19600 --- [  restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-30 17:15:17.554  INFO 19600 --- [  restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-30 17:15:17.599  INFO 19600 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-30 17:15:17.721  INFO 19600 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-05-30 17:15:18.205  INFO 19600 --- [  restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-05-30 17:15:18.694  INFO 19600 --- [  restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-05-30 17:15:18.732  INFO 19600 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-30 17:15:19.143  INFO 19600 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-30 17:15:19.189  INFO 19600 --- [  restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 128, b = 16)
+
+# Run progress: 0.00% complete, ETA 00:00:06
+# Fork: 1 of 1
+# Warmup Iteration   1: 3.558 s/op
+Iteration   1: 3.481 s/op
+
+
+Result "measureBees":
+  3.481 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 128, b = 32)
+
+# Run progress: 33.33% complete, ETA 00:00:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 7.946 s/op
+Iteration   1: 11.877 s/op
+
+
+Result "measureBees":
+  11.877 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 128, b = 64)
+
+# Run progress: 66.67% complete, ETA 00:00:13
+# Fork: 1 of 1
+# Warmup Iteration   1: 16.263 s/op
+Iteration   1: 16.257 s/op
+
+
+Result "measureBees":
+  16.257 s/op
+
+
+# Run complete. Total time: 00:01:00
+
+Benchmark              (a)  (b)  Mode  Cnt   Score   Error  Units
+Benchmark.measureBees  128   16  avgt        3.481           s/op
+Benchmark.measureBees  128   32  avgt       11.877           s/op
+Benchmark.measureBees  128   64  avgt       16.257           s/op
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 512, b = 16)
+
+# Run progress: 0.00% complete, ETA 00:00:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 21.717 s/op
+Iteration   1: 20.413 s/op
+
+
+Result "measureBees":
+  20.413 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 512, b = 32)
+
+# Run progress: 20.00% complete, ETA 00:02:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 51.100 s/op
+Iteration   1: 51.159 s/op
+
+
+Result "measureBees":
+  51.159 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 512, b = 64)
+
+# Run progress: 40.00% complete, ETA 00:03:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 122.349 s/op
+Iteration   1: 123.115 s/op
+
+
+Result "measureBees":
+  123.115 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 512, b = 128)
+
+# Run progress: 60.00% complete, ETA 00:04:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 280.665 s/op
+Iteration   1: 306.596 s/op
+
+
+Result "measureBees":
+  306.596 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 512, b = 256)
+
+# Run progress: 80.00% complete, ETA 00:04:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 1088.646 s/op
+Iteration   1: 680.691 s/op
+
+
+Result "measureBees":
+  680.691 s/op
+
+
+# Run complete. Total time: 00:45:48
+
+Benchmark              (a)  (b)  Mode  Cnt    Score   Error  Units
+Benchmark.measureBees  512   16  avgt        20.413           s/op
+Benchmark.measureBees  512   32  avgt        51.159           s/op
+Benchmark.measureBees  512   64  avgt       123.115           s/op
+Benchmark.measureBees  512  128  avgt       306.596           s/op
+Benchmark.measureBees  512  256  avgt       680.691           s/op
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 2048, b = 16)
+
+# Run progress: 0.00% complete, ETA 00:00:14
+# Fork: 1 of 1
+# Warmup Iteration   1: 160.577 s/op
+Iteration   1: 160.542 s/op
+
+
+Result "measureBees":
+  160.542 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 2048, b = 32)
+
+# Run progress: 14.29% complete, ETA 00:32:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 354.963 s/op
+Iteration   1: 346.201 s/op
+
+
+Result "measureBees":
+  346.201 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 2048, b = 64)
+
+# Run progress: 28.57% complete, ETA 00:42:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 830.348 s/op
+Iteration   1: 864.015 s/op
+
+
+Result "measureBees":
+  864.015 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 2048, b = 128)
+
+# Run progress: 42.86% complete, ETA 01:00:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 
