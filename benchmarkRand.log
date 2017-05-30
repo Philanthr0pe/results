@@ -674,4 +674,6 @@ Iteration   3: 527457978.568 us/op
 # Run progress: 83.33% complete, ETA 00:17:59
 # Fork: 2 of 3
 # Warmup Iteration   1: 504586289.208 us/op
-# Warmup Iteration   2: 
+# Warmup Iteration   2: 489813297.008 us/op
+Iteration   1: 489961312.407 us/op
+Iteration   2: 
