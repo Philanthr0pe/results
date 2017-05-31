@@ -276,4 +276,79 @@ Result "measureBees":
 
 # Run progress: 71.43% complete, ETA 00:08:28
 # Fork: 1 of 1
-Iteration   1: 
+Iteration   1: 1550.155 s/op
+
+
+Result "measureBees":
+  1550.155 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /opt/java8/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureBees
+# Parameters: (a = 1024, b = 512)
+
+# Run progress: 85.71% complete, ETA 00:07:50
+# Fork: 1 of 1
+Iteration   1: 4286.826 s/op
+
+
+Result "measureBees":
+  4286.826 s/op
+
+
+# Run complete. Total time: 01:58:30
+
+Benchmark               (a)  (b)  Mode  Cnt     Score   Error  Units
+Benchmark.measureBees  1024    8  avgt         23.860           s/op
+Benchmark.measureBees  1024   16  avgt         62.116           s/op
+Benchmark.measureBees  1024   32  avgt        137.436           s/op
+Benchmark.measureBees  1024   64  avgt        314.609           s/op
+Benchmark.measureBees  1024  128  avgt        731.860           s/op
+Benchmark.measureBees  1024  256  avgt       1550.155           s/op
+Benchmark.measureBees  1024  512  avgt       4286.826           s/op
+Iteration:0
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 256;  (b) = 8; 3.981 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 256;  (b) = 16; 8.918 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 256;  (b) = 32; 17.407 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 256;  (b) = 64; 45.553 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 256;  (b) = 128; 116.588 s/op
+Iteration:0
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 1024;  (b) = 8; 23.860 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 1024;  (b) = 16; 62.116 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 1024;  (b) = 32; 137.436 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 1024;  (b) = 64; 314.609 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 1024;  (b) = 128; 731.860 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 1024;  (b) = 256; 1550.155 s/op
+com.univer.quanthash.Benchmark.measureBees
+Params : (a) = 1024;  (b) = 512; 4286.826 s/op
+2017-05-31 00:43:34.796  INFO 22087 --- [  restartedMain] com.univer.quanthash.Application         : Started Application in 7308.929 seconds (JVM running for 7309.342)
+2017-05-31 00:43:34.807  INFO 22087 --- [       Thread-9] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5a8b157e: startup date [Tue May 30 22:41:46 MSK 2017]; root of context hierarchy
+2017-05-31 00:43:34.819  INFO 22087 --- [       Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-31 00:43:34.819  INFO 22087 --- [       Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-31 00:43:34.820  INFO 22087 --- [       Thread-9] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-05-31 00:43:34.832  INFO 22087 --- [       Thread-9] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 02:01 h
+[INFO] Finished at: 2017-05-31T00:43:35+03:00
+[INFO] Final Memory: 21M/429M
+[INFO] ------------------------------------------------------------------------
