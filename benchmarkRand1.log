@@ -1,0 +1,868 @@
+nohup: ignoring input
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building quant-hash 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) > test-compile @ quant-hash >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ quant-hash ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ quant-hash ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ quant-hash ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/quanthash/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ quant-hash ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) < test-compile @ quant-hash <<<
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) @ quant-hash ---
+[INFO] Attaching agents: []
+22:46:32.038 [main] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings - Included patterns for restart : []
+22:46:32.041 [main] DEBUG org.springframework.boot.devtools.settings.DevToolsSettings - Excluded patterns for restart : [/spring-boot-starter/target/classes/, /spring-boot-autoconfigure/target/classes/, /spring-boot-starter-[\w-]+/, /spring-boot/target/classes/, /spring-boot-actuator/target/classes/, /spring-boot-devtools/target/classes/]
+22:46:32.041 [main] DEBUG org.springframework.boot.devtools.restart.ChangeableUrls - Matching URLs for reloading : [file:/root/quanthash/target/classes/]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.2.RELEASE)
+
+2017-05-30 22:46:32.416  INFO 8961 --- [  restartedMain] com.univer.quanthash.Application         : Starting Application on host-192-168-2-12 with PID 8961 (/root/quanthash/target/classes started by root in /root/quanthash)
+2017-05-30 22:46:32.417  INFO 8961 --- [  restartedMain] com.univer.quanthash.Application         : No active profile set, falling back to default profiles: default
+2017-05-30 22:46:32.478  INFO 8961 --- [  restartedMain] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5aee7800: startup date [Tue May 30 22:46:32 MSK 2017]; root of context hierarchy
+2017-05-30 22:46:33.780  INFO 8961 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2017-05-30 22:46:33.806  INFO 8961 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-05-30 22:46:33.984  INFO 8961 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2017-05-30 22:46:33.986  INFO 8961 --- [  restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-05-30 22:46:33.987  INFO 8961 --- [  restartedMain] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-05-30 22:46:34.035  INFO 8961 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-05-30 22:46:34.169  INFO 8961 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-05-30 22:46:34.595  INFO 8961 --- [  restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-05-30 22:46:35.029  INFO 8961 --- [  restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+2017-05-30 22:46:35.082  INFO 8961 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2017-05-30 22:46:35.497  INFO 8961 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2017-05-30 22:46:35.549  INFO 8961 --- [  restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 64, b = 16)
+
+# Run progress: 0.00% complete, ETA 00:00:04
+# Fork: 1 of 1
+Iteration   1: 0.009 s/op
+
+
+Result "measureAdapt":
+  0.009 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 64, b = 32)
+
+# Run progress: 25.00% complete, ETA 00:00:04
+# Fork: 1 of 1
+Iteration   1: 0.020 s/op
+
+
+Result "measureAdapt":
+  0.020 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 64, b = 16)
+
+# Run progress: 50.00% complete, ETA 00:00:02
+# Fork: 1 of 1
+Iteration   1: 0.158 s/op
+
+
+Result "measureRand":
+  0.158 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 64, b = 32)
+
+# Run progress: 75.00% complete, ETA 00:00:01
+# Fork: 1 of 1
+Iteration   1: 0.663 s/op
+
+
+Result "measureRand":
+  0.663 s/op
+
+
+# Run complete. Total time: 00:00:06
+
+Benchmark               (a)  (b)  Mode  Cnt  Score   Error  Units
+Benchmark.measureAdapt   64   16  avgt       0.009           s/op
+Benchmark.measureAdapt   64   32  avgt       0.020           s/op
+Benchmark.measureRand    64   16  avgt       0.158           s/op
+Benchmark.measureRand    64   32  avgt       0.663           s/op
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 256, b = 16)
+
+# Run progress: 0.00% complete, ETA 00:00:08
+# Fork: 1 of 1
+Iteration   1: 0.086 s/op
+
+
+Result "measureAdapt":
+  0.086 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 256, b = 32)
+
+# Run progress: 12.50% complete, ETA 00:00:10
+# Fork: 1 of 1
+Iteration   1: 0.149 s/op
+
+
+Result "measureAdapt":
+  0.149 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 256, b = 64)
+
+# Run progress: 25.00% complete, ETA 00:00:08
+# Fork: 1 of 1
+Iteration   1: 0.299 s/op
+
+
+Result "measureAdapt":
+  0.299 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 256, b = 128)
+
+# Run progress: 37.50% complete, ETA 00:00:07
+# Fork: 1 of 1
+Iteration   1: 0.677 s/op
+
+
+Result "measureAdapt":
+  0.677 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 256, b = 16)
+
+# Run progress: 50.00% complete, ETA 00:00:06
+# Fork: 1 of 1
+Iteration   1: 2.366 s/op
+
+
+Result "measureRand":
+  2.366 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 256, b = 32)
+
+# Run progress: 62.50% complete, ETA 00:00:05
+# Fork: 1 of 1
+Iteration   1: 7.818 s/op
+
+
+Result "measureRand":
+  7.818 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 256, b = 64)
+
+# Run progress: 75.00% complete, ETA 00:00:05
+# Fork: 1 of 1
+Iteration   1: 31.525 s/op
+
+
+Result "measureRand":
+  31.525 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 256, b = 128)
+
+# Run progress: 87.50% complete, ETA 00:00:07
+# Fork: 1 of 1
+Iteration   1: 131.966 s/op
+
+
+Result "measureRand":
+  131.966 s/op
+
+
+# Run complete. Total time: 00:03:01
+
+Benchmark               (a)  (b)  Mode  Cnt    Score   Error  Units
+Benchmark.measureAdapt  256   16  avgt         0.086           s/op
+Benchmark.measureAdapt  256   32  avgt         0.149           s/op
+Benchmark.measureAdapt  256   64  avgt         0.299           s/op
+Benchmark.measureAdapt  256  128  avgt         0.677           s/op
+Benchmark.measureRand   256   16  avgt         2.366           s/op
+Benchmark.measureRand   256   32  avgt         7.818           s/op
+Benchmark.measureRand   256   64  avgt        31.525           s/op
+Benchmark.measureRand   256  128  avgt       131.966           s/op
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 512, b = 16)
+
+# Run progress: 0.00% complete, ETA 00:00:10
+# Fork: 1 of 1
+Iteration   1: 0.261 s/op
+
+
+Result "measureAdapt":
+  0.261 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 512, b = 32)
+
+# Run progress: 10.00% complete, ETA 00:00:13
+# Fork: 1 of 1
+Iteration   1: 0.475 s/op
+
+
+Result "measureAdapt":
+  0.475 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 512, b = 64)
+
+# Run progress: 20.00% complete, ETA 00:00:13
+# Fork: 1 of 1
+Iteration   1: 1.252 s/op
+
+
+Result "measureAdapt":
+  1.252 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 512, b = 128)
+
+# Run progress: 30.00% complete, ETA 00:00:11
+# Fork: 1 of 1
+Iteration   1: 2.094 s/op
+
+
+Result "measureAdapt":
+  2.094 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 512, b = 256)
+
+# Run progress: 40.00% complete, ETA 00:00:11
+# Fork: 1 of 1
+Iteration   1: 4.153 s/op
+
+
+Result "measureAdapt":
+  4.153 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 512, b = 16)
+
+# Run progress: 50.00% complete, ETA 00:00:11
+# Fork: 1 of 1
+Iteration   1: 7.870 s/op
+
+
+Result "measureRand":
+  7.870 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 512, b = 32)
+
+# Run progress: 60.00% complete, ETA 00:00:13
+# Fork: 1 of 1
+Iteration   1: 32.161 s/op
+
+
+Result "measureRand":
+  32.161 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 512, b = 64)
+
+# Run progress: 70.00% complete, ETA 00:00:22
+# Fork: 1 of 1
+Iteration   1: 133.062 s/op
+
+
+Result "measureRand":
+  133.062 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 512, b = 128)
+
+# Run progress: 80.00% complete, ETA 00:00:46
+# Fork: 1 of 1
+Iteration   1: 532.447 s/op
+
+
+Result "measureRand":
+  532.447 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 512, b = 256)
+
+# Run progress: 90.00% complete, ETA 00:01:19
+# Fork: 1 of 1
+Iteration   1: 2092.556 s/op
+
+
+Result "measureRand":
+  2092.556 s/op
+
+
+# Run complete. Total time: 00:46:52
+
+Benchmark               (a)  (b)  Mode  Cnt     Score   Error  Units
+Benchmark.measureAdapt  512   16  avgt          0.261           s/op
+Benchmark.measureAdapt  512   32  avgt          0.475           s/op
+Benchmark.measureAdapt  512   64  avgt          1.252           s/op
+Benchmark.measureAdapt  512  128  avgt          2.094           s/op
+Benchmark.measureAdapt  512  256  avgt          4.153           s/op
+Benchmark.measureRand   512   16  avgt          7.870           s/op
+Benchmark.measureRand   512   32  avgt         32.161           s/op
+Benchmark.measureRand   512   64  avgt        133.062           s/op
+Benchmark.measureRand   512  128  avgt        532.447           s/op
+Benchmark.measureRand   512  256  avgt       2092.556           s/op
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 1024, b = 16)
+
+# Run progress: 0.00% complete, ETA 00:00:12
+# Fork: 1 of 1
+Iteration   1: 0.810 s/op
+
+
+Result "measureAdapt":
+  0.810 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 1024, b = 32)
+
+# Run progress: 8.33% complete, ETA 00:00:22
+# Fork: 1 of 1
+Iteration   1: 1.609 s/op
+
+
+Result "measureAdapt":
+  1.609 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 1024, b = 64)
+
+# Run progress: 16.67% complete, ETA 00:00:20
+# Fork: 1 of 1
+Iteration   1: 3.020 s/op
+
+
+Result "measureAdapt":
+  3.020 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 1024, b = 128)
+
+# Run progress: 25.00% complete, ETA 00:00:22
+# Fork: 1 of 1
+Iteration   1: 5.733 s/op
+
+
+Result "measureAdapt":
+  5.733 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 1024, b = 256)
+
+# Run progress: 33.33% complete, ETA 00:00:27
+# Fork: 1 of 1
+Iteration   1: 12.872 s/op
+
+
+Result "measureAdapt":
+  12.872 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureAdapt
+# Parameters: (a = 1024, b = 512)
+
+# Run progress: 41.67% complete, ETA 00:00:37
+# Fork: 1 of 1
+Iteration   1: 26.660 s/op
+
+
+Result "measureAdapt":
+  26.660 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 1024, b = 16)
+
+# Run progress: 50.00% complete, ETA 00:00:54
+# Fork: 1 of 1
+Iteration   1: 32.006 s/op
+
+
+Result "measureRand":
+  32.006 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 1024, b = 32)
+
+# Run progress: 58.33% complete, ETA 00:01:01
+# Fork: 1 of 1
+Iteration   1: 134.313 s/op
+
+
+Result "measureRand":
+  134.313 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 1024, b = 64)
+
+# Run progress: 66.67% complete, ETA 00:01:50
+# Fork: 1 of 1
+Iteration   1: 497.594 s/op
+
+
+Result "measureRand":
+  497.594 s/op
+
+
+# JMH 1.8 (released 785 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 1024, b = 128)
+
+# Run progress: 75.00% complete, ETA 00:03:59
+# Fork: 1 of 1
+Iteration   1: 2087.029 s/op
+
+
+Result "measureRand":
+  2087.029 s/op
+
+
+# JMH 1.8 (released 786 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 1024, b = 256)
+
+# Run progress: 83.33% complete, ETA 00:09:21
+# Fork: 1 of 1
+Iteration   1: 6197.178 s/op
+
+
+Result "measureRand":
+  6197.178 s/op
+
+
+# JMH 1.8 (released 786 days ago, please consider updating!)
+# VM invoker: /usr/java/jdk1.8.0_112/jre/bin/java
+# VM options: <none>
+# Warmup: <none>
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.univer.quanthash.Benchmark.measureRand
+# Parameters: (a = 1024, b = 512)
+
+# Run progress: 91.67% complete, ETA 00:13:38
+# Fork: 1 of 1
+Iteration   1: 12669.117 s/op
+
+
+Result "measureRand":
+  12669.117 s/op
+
+
+# Run complete. Total time: 06:01:14
+
+Benchmark                (a)  (b)  Mode  Cnt      Score   Error  Units
+Benchmark.measureAdapt  1024   16  avgt           0.810           s/op
+Benchmark.measureAdapt  1024   32  avgt           1.609           s/op
+Benchmark.measureAdapt  1024   64  avgt           3.020           s/op
+Benchmark.measureAdapt  1024  128  avgt           5.733           s/op
+Benchmark.measureAdapt  1024  256  avgt          12.872           s/op
+Benchmark.measureAdapt  1024  512  avgt          26.660           s/op
+Benchmark.measureRand   1024   16  avgt          32.006           s/op
+Benchmark.measureRand   1024   32  avgt         134.313           s/op
+Benchmark.measureRand   1024   64  avgt         497.594           s/op
+Benchmark.measureRand   1024  128  avgt        2087.029           s/op
+Benchmark.measureRand   1024  256  avgt        6197.178           s/op
+Benchmark.measureRand   1024  512  avgt       12669.117           s/op
+Iteration:0
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 64;  (b) = 16; 0.009 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 64;  (b) = 32; 0.020 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 64;  (b) = 16; 0.158 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 64;  (b) = 32; 0.663 s/op
+Iteration:0
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 256;  (b) = 16; 0.086 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 256;  (b) = 32; 0.149 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 256;  (b) = 64; 0.299 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 256;  (b) = 128; 0.677 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 256;  (b) = 16; 2.366 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 256;  (b) = 32; 7.818 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 256;  (b) = 64; 31.525 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 256;  (b) = 128; 131.966 s/op
+Iteration:0
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 512;  (b) = 16; 0.261 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 512;  (b) = 32; 0.475 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 512;  (b) = 64; 1.252 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 512;  (b) = 128; 2.094 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 512;  (b) = 256; 4.153 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 512;  (b) = 16; 7.870 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 512;  (b) = 32; 32.161 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 512;  (b) = 64; 133.062 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 512;  (b) = 128; 532.447 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 512;  (b) = 256; 2092.556 s/op
+Iteration:0
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 1024;  (b) = 16; 0.810 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 1024;  (b) = 32; 1.609 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 1024;  (b) = 64; 3.020 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 1024;  (b) = 128; 5.733 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 1024;  (b) = 256; 12.872 s/op
+com.univer.quanthash.Benchmark.measureAdapt
+Params : (a) = 1024;  (b) = 512; 26.660 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 1024;  (b) = 16; 32.006 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 1024;  (b) = 32; 134.313 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 1024;  (b) = 64; 497.594 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 1024;  (b) = 128; 2087.029 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 1024;  (b) = 256; 6197.178 s/op
+com.univer.quanthash.Benchmark.measureRand
+Params : (a) = 1024;  (b) = 512; 12669.117 s/op
+2017-05-31 05:37:49.721  INFO 8961 --- [  restartedMain] com.univer.quanthash.Application         : Started Application in 24677.655 seconds (JVM running for 24678.11)
+2017-05-31 05:37:49.728  INFO 8961 --- [       Thread-9] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5aee7800: startup date [Tue May 30 22:46:32 MSK 2017]; root of context hierarchy
+2017-05-31 05:37:49.732  INFO 8961 --- [       Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-05-31 05:37:49.732  INFO 8961 --- [       Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2017-05-31 05:37:49.734  INFO 8961 --- [       Thread-9] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000227: Running hbm2ddl schema export
+2017-05-31 05:37:49.742  INFO 8961 --- [       Thread-9] org.hibernate.tool.hbm2ddl.SchemaExport  : HHH000230: Schema export complete
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 06:51 h
+[INFO] Finished at: 2017-05-31T05:37:50+03:00
+[INFO] Final Memory: 26M/1237M
+[INFO] ------------------------------------------------------------------------
