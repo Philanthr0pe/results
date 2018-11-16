@@ -1,1 +1,10 @@
-OEM encodings, also known as DOS code pages, were defined by IBM for use in the original IBM PC text mode display system. They typically include graphical and line-drawing characters common in DOS applications. "Unicode"-encoded Windows text files contain text in UTF-16 Unicode Transformation Format. Such files normally begin with Byte Order Mark (BOM), which communicates the endianness of the file content. Although UTF-8 does not suffer from endianness problems, many Windows programs (i.e. Notepad) prepend the contents of UTF-8-encoded files with BOM,[2] to differentiate UTF-8 encoding from other 8-bit encodings.[3
+sadgsdgd
+asdgasdgasg
+
+asdgdsgasgasg
+gdasagag
+asdgasdgasg
+
+agdasagag
+agdasagag
+asdgasdgasg
